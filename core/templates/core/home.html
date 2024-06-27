@@ -1,0 +1,49 @@
+{% extends 'core/base.html' %} {% load static %} {% block content %}
+<div class="mt-5">
+  <div class="text-center">
+    <img
+      src="{% static 'core/images/photo.jpg' %}"
+      alt="ProfilePic"
+      class="img-thumbnail"
+   
+    />
+  </div>
+  <div class="mt-5 text-white mx-5 text-justify">
+    <h1 class="font-weight-bold satisfy-regular">Hello,</h1>
+    <div class="px-4" style="line-height: 2rem">
+      <p>
+        I am <b class="text-warning">Tushar Raut</b>, a passionate developer
+        with a strong foundation in various technical skills and a knack for
+        tackling challenges. Here's a glimpse into my world:
+      </p>
+      <p>
+        <b><u>Full-Stack Developer:</u></b> I can build robust backend
+        applications (Spring Boot, Django) with user-friendly interfaces
+        (React.js, HTML, CSS). I leverage powerful databases (MySQL) and ensure
+        smooth deployment (Git, Amazon EC2).
+      </p>
+      <p>
+        <b><u>Tech Enthusiast:</u></b> Beyond core languages (Java, C++), I'm
+        well-versed in Object-Oriented Programming, Data Structures &
+        Algorithms, and explore other frameworks like J2EE and .NET etc.
+      </p>
+      <p>
+        <b><u>Project Experience:</u></b> I've built practical applications like
+        a Parking Management System (link to GitHub repo) and a Hotel
+        Reservation App (Salesforce).
+      </p>
+      <p>
+        <b><u>Lifelong Learner:</u></b> I'm always eager to learn new
+        technologies and collaborate effectively within a team (Salesforce
+        Admin, Primavera Suite).
+      </p>
+    </div>
+  </div>
+  <div class="text-center">
+    <a href="{% url 'contact' %}" class="btn btn-outline-warning my-3 mr-5"
+      >Hire me</a
+    >
+    <a href="{% url 'contact' %}" class="btn btn-outline-info my-3">Contact</a>
+  </div>
+</div>
+{% endblock content %}

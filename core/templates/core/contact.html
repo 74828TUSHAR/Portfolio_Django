@@ -1,0 +1,52 @@
+{% extends 'core/base.html' %} {% block content %}
+<div class="container mt-5">
+  <h1 class="text-warning mb-5 border-bottom">Contact</h1>
+  <div class="row text-white mb-5">
+    <h3 class="font-weight-bold satisfy-regular">Let's Connect!</h3>
+    <p class="mx-auto mb-5">
+      I'm always interested in collaborating on new projects, discussing
+      technical challenges, or simply connecting with fellow tech enthusiasts.
+      Feel free to reach out using the contact form below or through the links
+      provided.
+    </p>
+    <div class="col-sm-12 mb-5">
+      <form action="">
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputname"> Your Name </label>
+            <input type="text" class="form-control" id="inputname" />
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputEmail">Your Email</label>
+            <input type="email" class="form-control" id="inputEmail" required />
+          </div>
+        </div>
+        <div class="from-group">
+          <label for="inputSubject">Your Subject</label>
+          <input type="text" class="form-control" id="inputSubject" />
+        </div>
+        <div class="mb-3">
+          <label for="inputTextarea">Your Message</label>
+          <textarea class="form-control" id="inputTextarea" required></textarea>
+        </div>
+        <button class="btn btn-primary" type="submit">Send</button>
+      </form>
+    </div>
+    <div class="row text-center text-white mb-5">
+      <div class="col-sm-4">
+        <i class="fa-solid fa-location-dot fa-5x mb-3 i-color"></i>
+        <p>Pune</p>
+      </div>
+      <div class="col-sm-4">
+        <i class="fa-solid fa-phone fa-5x mb-3 i-color"></i>
+        <p>+91 8766822360</p>
+      </div>
+      <div class="col-sm-4">
+        <i class="fa-solid fa-envelope fa-5x mb-3 i-color"></i>
+        <p>ertusharraut@gmail.com</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock content %}
